@@ -21,6 +21,11 @@ return (
             <button onClick={() => navigate("/perfil/Ricardo")}>Perfil Ricardo</button>
             <button onClick={() => navigate("/perfil/Douglas")}>Perfil Douglas</button>
 
+            <hr />
+
+            <Link to= '/inicio'>Inicio</Link><br />
+            <Link to="/filmes">Filmes</Link>
+
             
 
 
