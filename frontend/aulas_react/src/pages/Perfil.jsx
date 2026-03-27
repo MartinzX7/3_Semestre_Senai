@@ -7,7 +7,7 @@ function Perfil() {
   return (
     <div>
       <h1>Este é o perfil de {nome}</h1>
-      <Link to="/">Voltar para principla</Link>
+      <Link to="/">Voltar para principal</Link>
     </div>
   )
 

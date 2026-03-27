@@ -8,18 +8,18 @@ import Detalhes from './pages/Detalhes';
 import Contato from './pages/Contato';
 import Filmes from './pages/Filmes';
 
-function App (){
-return (
+function App() {
+  return (
     <BrowserRouter>
       <Routes>
-        <Route path='/' element={<Principal />}/>
-        <Route path='/sobre' element={<Sobre />}/>
-        <Route path='/perfil/:nome' element={<Perfil />}/>
-        <Route path='/inicio' element={<Inicio />}/>
-        <Route path='/detalhes' element={<Detalhes />}/>
-        <Route path='/Contato' element={<Contato />}/>
-        <Route path='/filmes/:nome' element={<Filmes />}/>
-        <Route path='*' element={<NotFound />}/>
+        <Route path='/' element={<Principal />} />
+        <Route path='/sobre' element={<Sobre />} />
+        <Route path='/perfil/:nome' element={<Perfil />} />
+        <Route path='/inicio' element={<Inicio />} />
+        <Route path='/detalhes' element={<Detalhes />} />
+        <Route path='/Contato' element={<Contato />} />
+        <Route path='/filmes/:nome' element={<Filmes />} />
+        <Route path='*' element={<NotFound />} />
       </Routes>
     </BrowserRouter>
   );

@@ -6,6 +6,7 @@ function Inicio() {
     <div>
       <h1>Bem-Vindo</h1>
       <Link to="/detalhes">Detalhes</Link>
+      <Link to="/">Página Principal</Link>
     </div>
   )
 

@@ -1,11 +1,11 @@
 import { estilos } from "../style/Estilos"
-import { Link,useNavigate} from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 
 const Aula14 = () => {
 
     const navigate = useNavigate()
 
-return (
+    return (
         <div style={estilos.cardAula}>
             <h2>Aula 14 - Router</h2>
             <h3>Biblioteca que permite criar e gerenciar rotas</h3>
@@ -18,15 +18,15 @@ return (
             <hr />
             <h3>Rota dinaminca com useParams</h3>
 
-            <button onClick={() => navigate("/perfil/Ricardo")}>Perfil Ricardo</button>
+            <button onClick={() => navigate("/perfil/Ricardo")}>Perfil Ricardo</button><br />
             <button onClick={() => navigate("/perfil/Douglas")}>Perfil Douglas</button>
 
             <hr />
 
-            <Link to= '/inicio'>Inicio</Link><br />
+            <Link to='/inicio'>Inicio</Link><br />
             <Link to="/filmes">Filmes</Link>
 
-            
+
 
 
         </div>
