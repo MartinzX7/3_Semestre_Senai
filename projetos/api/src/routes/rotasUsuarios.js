@@ -133,7 +133,7 @@ router.delete('/usuarios/:id_usuario', async (req, res) => {
     const { id_usuario } = req.params;
     try {
         //Executa o comando de update
-        const comando = `UPDATE FROM usuarios WHERE id_usuario = $1 and ativo = true`
+        const comando = `UPDATE usuarios SET ativo = true WHERE id_usuario = $1 `
         await BD.query(comando, [id_usuario])
         return res.status(200).json({ message: "Usuario removido com sucesso" })
     } catch (error) {

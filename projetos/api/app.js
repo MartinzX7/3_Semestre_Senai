@@ -4,6 +4,8 @@ import swaggerUi from 'swagger-ui-express';
 import documentacao from './config/swagger.js';
 import cors from 'cors'
 import rotasUsuarios from './src/routes/rotasUsuarios.js';
+import rotasCategorias from './src/routes/rotasCategorias.js';
+
 
 const app = express();
 app.use(express.json());
@@ -18,6 +20,7 @@ app.get('/', async(req, res) =>{
 })
 
 app.use(rotasUsuarios)
+app.use(rotasCategorias)
 
 const porta = 3000;
 app.listen(porta, () =>{
